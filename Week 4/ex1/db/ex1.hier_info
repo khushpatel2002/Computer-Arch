@@ -1,0 +1,6 @@
+|ex1
+sw0 => led0.IN0
+sw1 => led0.IN1
+led0 << led0.DB_MAX_OUTPUT_PORT_TYPE
+
+
