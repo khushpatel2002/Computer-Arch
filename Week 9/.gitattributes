@@ -1,0 +1,63 @@
+ .data
+mes: .asciiz " Enter 8 floating point numbers:"
+.text
+li $v0, 4 
+la $a0, mes 
+syscall
+
+li $v0, 6
+syscall 
+
+mov.s $f1, $f0
+syscall
+
+li $v0, 6
+syscall   
+
+c.le.s $f0, $f1 
+bc1t something
+
+li $v0, 6
+syscall   
+
+c.le.s $f0, $f1 
+bc1t something
+
+li $v0, 6
+syscall   
+
+c.le.s $f0, $f1 
+bc1t something
+
+li $v0, 6
+syscall   
+
+c.le.s $f0, $f1 
+bc1t something
+
+li $v0, 6
+syscall   
+
+c.le.s $f0, $f1 
+bc1t something 
+
+li $v0, 6
+syscall   
+
+c.le.s $f0, $f1 
+bc1t something
+
+li $v0, 6
+syscall   
+
+c.le.s $f0, $f1
+bc1t something  
+
+li $v0, 2
+mov.s $f12 , $f1
+syscall 
+
+something:
+	mov.s $f1, $f0
+	syscall
+
